@@ -6,8 +6,7 @@ export type NewsLanguage =
 
 export type NewsSortBy = 'relevancy' | 'popularity' | 'publishedAt';
 
-export interface GetNewsParams {
-  apiKey: string;           
+export interface GetNewsParams {          
   q?: string;
   searchIn?: NewsSearchIn | `${NewsSearchIn},${NewsSearchIn}` | string;
   sources?: string;
@@ -15,28 +14,27 @@ export interface GetNewsParams {
   excludeDomains?: string;
   from?: string;             
   to?: string;               
-  language?: NewsLanguage;
   sortBy?: NewsSortBy;
   pageSize?: number;         
   page?: number;
 }
 
 export interface GetNewsResponse {
-    status: string,
-    totalResults: number,
-    articles: Articles[],
+    status: string;
+    totalResults: number;
+    articles: Articles[];
 }
 
 export interface Articles {
     source: {
-        id: string,
-        name: string,
+        id: string;
+        name: string;
     }
-    author: string,
-    title: string,
-    description: string,
-    url: string,
-    urlToImage: string,
-    publishedAt: string,
-    content: string,
+    author: string;
+    title: string;
+    description: string;
+    url: string;
+    urlToImage: string;
+    publishedAt: string;
+    content: string;
 }
