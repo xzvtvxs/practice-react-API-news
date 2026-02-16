@@ -1,0 +1,15 @@
+.lessonsList {
+  background: #f7f8fc;
+  border: 1px solid #e7e9ee;
+  border-radius: 16px;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.lessonsList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}

@@ -1,0 +1,44 @@
+.createForm {
+  background: #ffffff;
+  border: 1px solid #e7e9ee;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(27, 31, 35, 0.08);
+}
+
+.createForm form {
+  display: grid;
+  gap: 12px;
+}
+
+.createForm input {
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d6d9e2;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  background: #fafbff;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.createForm input:focus {
+  border-color: #2f6feb;
+  box-shadow: 0 0 0 3px rgba(47, 111, 235, 0.15);
+}
+
+.createForm button {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #1f6feb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.createForm button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(31, 111, 235, 0.25);
+}

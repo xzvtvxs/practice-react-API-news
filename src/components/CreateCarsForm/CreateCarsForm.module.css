@@ -1,0 +1,64 @@
+.createCarsForm {
+  background: linear-gradient(145deg, #f4fbff, #ffffff);
+  border: 1px solid #d7e5f0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(24, 43, 70, 0.08);
+}
+
+.title {
+  margin: 0 0 14px;
+  font-size: 20px;
+  color: #18314f;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid #c5d6e4;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #1a2a3a;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #2e78b8;
+  box-shadow: 0 0 0 3px rgba(46, 120, 184, 0.18);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 76px;
+}
+
+.submitButton {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2a6ba7, #36938f);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.2s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(42, 107, 167, 0.25);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
